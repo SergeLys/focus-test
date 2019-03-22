@@ -1,17 +1,15 @@
 package com.cft;
 
 import com.cft.gui.MainForm;
+import javax.swing.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        final int width = 600;
-        final int height =300;
-
         MainForm mainForm =  new MainForm();
+        mainForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainForm.pack();
-        mainForm.setSize(width,height);
         mainForm.setVisible(true);
     }
 }
